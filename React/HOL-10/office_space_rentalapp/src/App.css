@@ -1,0 +1,20 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.textRed {
+  color: red;
+}
+
+.textGreen {
+  color: green;
+}
+
+img {
+  margin-top: 10px;
+}
+
+hr {
+  margin: 20px;
+}
