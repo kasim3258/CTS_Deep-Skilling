@@ -1,1 +1,73 @@
+Objectives
+
+1. List the features of ES6
+ES6 (ECMAScript 2015) introduced several new JavaScript features, including:
+let and const
+Arrow functions (=>)
+Classes
+Class inheritance
+Template literals
+Destructuring
+Spread (...) and Rest operators
+Modules (import and export)
+Promises
+map() and set()
+
+2. Explain JavaScript let
+let is used to declare variables with block scope. Its value can be changed, but it cannot be redeclared within the same block.
+Example:
+let age = 20;
+age = 21;
+
+3. Identify the differences between var and let
+var	let
+Function scoped	Block scoped
+Can be redeclared	Cannot be redeclared in the same scope
+Can be updated	Can be updated
+Hoisted and initialized as undefined	Hoisted but cannot be used before declaration
+
+4. Explain JavaScript const
+const is used to declare variables whose value cannot be reassigned after initialization. It is also block scoped.
+Example:
+const PI = 3.14;
+
+5. Explain ES6 class fundamentals
+ES6 classes provide a cleaner syntax to create objects using constructors and methods.
+Example:
+
+class Player {
+  constructor(name) {
+    this.name = name;
+  }
+}
+
+6. Explain ES6 class inheritance
+Inheritance allows one class to inherit properties and methods from another class using the extends keyword.
+Example:
+class Player {
+  constructor(name) {
+    this.name = name;
+  }
+}
+
+class Captain extends Player {
+}
+
+7. Define ES6 arrow functions
+Arrow functions are a shorter way of writing functions and automatically inherit the surrounding this value.
+Example:
+const add = (a, b) => a + b;
+
+8. Identify Set() and Map()
+Set
+A Set stores unique values.
+Example:
+const numbers = new Set([1, 2, 2, 3]);
+// Output: 1, 2, 3
+Map
+A Map stores key-value pairs.
+Example:
+const student = new Map();
+student.set("Name", "John");
+student.set("Age", 20);
 
