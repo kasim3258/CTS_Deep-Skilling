@@ -1,0 +1,16 @@
+.App {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+  margin-top: 20px;
+}
+
+li {
+  margin: 5px 0;
+}
+
+hr {
+  margin: 20px 0;
+}
