@@ -1,0 +1,37 @@
+<h1>{{ portalName }}</h1>
+
+<p>
+  Manage your courses, enroll in classes, and track your academic progress.
+</p>
+
+<div>
+  <p><strong>Courses Available:</strong> {{ availableCourses }}</p>
+  <p><strong>Enrolled:</strong> 3</p>
+  <p><strong>GPA:</strong> 3.8</p>
+</div>
+
+<!-- Shared Service Widget -->
+<app-course-summary-widget></app-course-summary-widget>
+
+<hr>
+
+<button
+  [disabled]="!isPortalActive"
+  (click)="onEnrollClick()">
+  Enroll Now
+</button>
+
+<p>{{ message }}</p>
+
+<hr>
+
+<input
+  type="text"
+  placeholder="Search Course"
+  [(ngModel)]="searchTerm">
+
+<button (click)="searchCourse()">
+  Search
+</button>
+
+<p>Searching for: {{ searchTerm }}</p>
